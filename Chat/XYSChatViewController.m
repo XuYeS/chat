@@ -70,7 +70,7 @@
     XYSrefreshHeaderView *headerView =(XYSrefreshHeaderView *) self.tableView.tableHeaderView;
     [headerView refresh];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [headerView endRefresh];
+        [headerView endRefresh];//结束圈圈
     });
 }
 #pragma mark - UITableViewDataSource
