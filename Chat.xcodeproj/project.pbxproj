@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B762709C1D0ACD0000D17265 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B762709B1D0ACD0000D17265 /* TableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		B7AF7E741D059DC800E54952 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AF7E731D059DC800E54952 /* main.m */; };
 		B7AF7E771D059DC800E54952 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AF7E761D059DC800E54952 /* AppDelegate.m */; };
 		B7AF7E7D1D059DC800E54952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AF7E7B1D059DC800E54952 /* Main.storyboard */; };
@@ -48,8 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B762709A1D0ACD0000D17265 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
-		B762709B1D0ACD0000D17265 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		B7AF7E6F1D059DC800E54952 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AF7E731D059DC800E54952 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7AF7E751D059DC800E54952 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -167,8 +164,6 @@
 				B7AF7E761D059DC800E54952 /* AppDelegate.m */,
 				B7AF7EC61D05A17500E54952 /* messages.plist */,
 				B7AF7E731D059DC800E54952 /* main.m */,
-				B762709A1D0ACD0000D17265 /* TableViewCell.h */,
-				B762709B1D0ACD0000D17265 /* TableViewCell.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -365,7 +360,6 @@
 				B7AF7ECD1D05A21400E54952 /* XYSChatViewController.m in Sources */,
 				B7AF7EC11D059DDE00E54952 /* MASViewAttribute.m in Sources */,
 				B7AF7EBE1D059DDE00E54952 /* MASConstraint.m in Sources */,
-				B762709C1D0ACD0000D17265 /* TableViewCell.m in Sources */,
 				B7AF7EBF1D059DDE00E54952 /* MASConstraintMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
