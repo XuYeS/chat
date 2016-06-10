@@ -9,7 +9,9 @@
 #import "XYSChatViewController.h"
 #import "XYSMessageCell.h"
 #import "XYSMessage.h"
-@interface XYSChatViewController ()<UITableViewDataSource,UITableViewDelegate>
+#import "XYSrefreshHeaderView.h"
+@interface XYSChatViewController ()<UITableViewDataSource,UITableViewDelegate,XYSrefrshHeaderViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong,nonatomic)NSMutableArray *messages;//每一个都是XYSMessage
 @end
 
@@ -38,6 +40,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(translationView:) name:UIKeyboardDidChangeFrameNotification object:nil];
+    XYSrefreshHeaderView *refreshHeaderView = [XYSrefreshHeaderView refreshHeader];
+    refreshHeaderView.delegate = self;
+    self.tableView.tableHeaderView =refreshHeaderView;
+    
+    
 }
 -(void)dealloc
 {
@@ -56,6 +63,15 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     [self.view endEditing:YES];
+}
+#pragma mark - XYSrefrshHeaderViewDelegate
+-(void)XYSrefrshHeaderViewDidClick:(XYSrefreshHeaderView *)refreshHeaderView
+{
+    XYSrefreshHeaderView *headerView =(XYSrefreshHeaderView *) self.tableView.tableHeaderView;
+    [headerView refresh];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [headerView endRefresh];
+    });
 }
 #pragma mark - UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

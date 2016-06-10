@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B762709F1D0AE22400D17265 /* XYSrefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B762709E1D0AE22400D17265 /* XYSrefreshHeaderView.m */; settings = {ASSET_TAGS = (); }; };
+		B76270A11D0AE25800D17265 /* XYSrefreshHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76270A01D0AE25800D17265 /* XYSrefreshHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
 		B7AF7E741D059DC800E54952 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AF7E731D059DC800E54952 /* main.m */; };
 		B7AF7E771D059DC800E54952 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AF7E761D059DC800E54952 /* AppDelegate.m */; };
 		B7AF7E7D1D059DC800E54952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AF7E7B1D059DC800E54952 /* Main.storyboard */; };
@@ -47,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B762709D1D0AE22400D17265 /* XYSrefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSrefreshHeaderView.h; sourceTree = "<group>"; };
+		B762709E1D0AE22400D17265 /* XYSrefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSrefreshHeaderView.m; sourceTree = "<group>"; };
+		B76270A01D0AE25800D17265 /* XYSrefreshHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSrefreshHeaderView.xib; sourceTree = "<group>"; };
 		B7AF7E6F1D059DC800E54952 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AF7E731D059DC800E54952 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7AF7E751D059DC800E54952 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -144,6 +149,9 @@
 				B7AF7EA51D059DDE00E54952 /* Masonry */,
 				B7AF7EC81D05A19C00E54952 /* XYSMessage.h */,
 				B7AF7EC91D05A19C00E54952 /* XYSMessage.m */,
+				B762709D1D0AE22400D17265 /* XYSrefreshHeaderView.h */,
+				B762709E1D0AE22400D17265 /* XYSrefreshHeaderView.m */,
+				B76270A01D0AE25800D17265 /* XYSrefreshHeaderView.xib */,
 				B7AF7ECE1D05A50E00E54952 /* XYSMessageCell.h */,
 				B7AF7ECF1D05A50E00E54952 /* XYSMessageCell.m */,
 				B7AF7ECB1D05A21400E54952 /* XYSChatViewController.h */,
@@ -323,6 +331,7 @@
 				B7AF7E821D059DC800E54952 /* LaunchScreen.storyboard in Resources */,
 				B7AF7E7F1D059DC800E54952 /* Assets.xcassets in Resources */,
 				B7AF7E7D1D059DC800E54952 /* Main.storyboard in Resources */,
+				B76270A11D0AE25800D17265 /* XYSrefreshHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B762709F1D0AE22400D17265 /* XYSrefreshHeaderView.m in Sources */,
 				B7AF7EC41D059DDE00E54952 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				B7AF7EC21D059DDE00E54952 /* MASViewConstraint.m in Sources */,
 				B7AF7EBD1D059DDE00E54952 /* MASCompositeConstraint.m in Sources */,

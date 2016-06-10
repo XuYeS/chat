@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XYSrefreshHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJN-Xc-efO" userLabel="loadingView">
+                    <rect key="frame" x="0.0" y="0.0" width="289" height="60"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FBk-V9-Jos">
+                            <rect key="frame" x="80.5" y="0.0" width="20" height="60"/>
+                            <animations/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载内容" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jie-VM-aAi">
+                            <rect key="frame" x="105.5" y="5" width="78" height="50"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="jie-VM-aAi" secondAttribute="trailing" constant="120" id="9Qw-Yf-dY3"/>
+                        <constraint firstItem="jie-VM-aAi" firstAttribute="centerX" secondItem="lJN-Xc-efO" secondAttribute="centerX" id="NXf-Ps-log"/>
+                        <constraint firstAttribute="bottom" secondItem="FBk-V9-Jos" secondAttribute="bottom" id="RZD-XK-iIx"/>
+                        <constraint firstItem="jie-VM-aAi" firstAttribute="centerY" secondItem="lJN-Xc-efO" secondAttribute="centerY" id="SrX-Vy-jKg"/>
+                        <constraint firstItem="jie-VM-aAi" firstAttribute="leading" secondItem="FBk-V9-Jos" secondAttribute="trailing" constant="5" id="Y5f-bL-ncI"/>
+                        <constraint firstItem="FBk-V9-Jos" firstAttribute="top" secondItem="lJN-Xc-efO" secondAttribute="top" id="ehR-wR-QAU"/>
+                        <constraint firstAttribute="bottom" secondItem="jie-VM-aAi" secondAttribute="bottom" constant="5" id="lCt-gT-7Ej"/>
+                        <constraint firstItem="jie-VM-aAi" firstAttribute="top" secondItem="lJN-Xc-efO" secondAttribute="top" constant="5" id="vzW-eZ-mzX"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="9Qw-Yf-dY3"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfl-fz-zSA">
+                    <rect key="frame" x="0.0" y="0.0" width="289" height="60"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="点击加载内容">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="refreshTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="9q4-H4-xur"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lJN-Xc-efO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bet-ga-6nd"/>
+                <constraint firstItem="Kfl-fz-zSA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FkN-5y-t06"/>
+                <constraint firstAttribute="bottom" secondItem="Kfl-fz-zSA" secondAttribute="bottom" id="KaM-Vk-sWw"/>
+                <constraint firstAttribute="trailing" secondItem="lJN-Xc-efO" secondAttribute="trailing" id="Mye-tZ-Fp3"/>
+                <constraint firstAttribute="trailing" secondItem="Kfl-fz-zSA" secondAttribute="trailing" id="PIS-yQ-Myt"/>
+                <constraint firstItem="lJN-Xc-efO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="c6Z-Hw-lRD"/>
+                <constraint firstItem="Kfl-fz-zSA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cIA-gy-nTP"/>
+                <constraint firstAttribute="bottom" secondItem="lJN-Xc-efO" secondAttribute="bottom" id="iVe-Xj-y53"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loadingView" destination="lJN-Xc-efO" id="gpt-HX-wAX"/>
+                <outlet property="refreshButton" destination="Kfl-fz-zSA" id="pmk-BU-tbV"/>
+            </connections>
+            <point key="canvasLocation" x="292.5" y="319"/>
+        </view>
+    </objects>
+</document>
